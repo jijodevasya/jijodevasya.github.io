@@ -21,6 +21,16 @@
       font-size: 2em;
       color: #000000;
     }
+    @keyframes fadeInFromLeft {
+      0% {
+        transform: translateX(-30px); /* Start from the left */
+        opacity: 0; /* Invisible */
+      }
+      100% {
+        transform: translateX(0); /* End at normal position */
+        opacity: 1; /* Fully visible */
+      }
+    }
     .profile-img {
   display: inline-block;
   margin: 20px auto;
@@ -34,6 +44,7 @@
   justify-content: space-between; /* Distribute links to the sides */
   width: 50%; /* Adjust the width of the container for a neat look */
   margin: 20px auto; /* Center the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .link-button {
   display: inline-block;
