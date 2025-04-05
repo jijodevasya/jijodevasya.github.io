@@ -52,37 +52,35 @@
   transform: translateY(-12px);
 }
 .contact-container {
-      position: fixed; /* Keep it in place even while scrolling */
-      bottom: 20px; /* Distance from the bottom */
-      Right: 20px; /* Distance from the Right */
-      display: flex;
-      align-items: center; /* Align the icon and text horizontally */
-      background-color: #284C64; /* Background color */
-      padding: 10px 20px;
-      border-radius: 25px; /* Rounded corners */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
+  position: fixed; /* Keep it in place even while scrolling */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  display: flex;
+  align-items: center; /* Align the icon and text horizontally */
+  background-color: #284C64; /* Background color */
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease; /* Smooth transition for hovering */
+}
 
-    .contact-container a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: white;
-      font-size: 1.2em;
-      font-weight: bold;
-      transition: 0.4s ease;
-    }
+.contact-container:hover {
+  transform: translateY(-12px); /* Move the container up when hovered */
+}
 
-    .contact-container a:hover {
-      color: #D0A899; /* Hover effect */
-      transform: translateZ(42px);
-    }
+.contact-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
-    .contact-container img {
-      width: 20px;
-      height: 20px;
-      margin-right: 10px; /* Space between icon and text */
-    }
+.contact-container a:hover {
+  color: #D0A899; /* Hover effect on the text */
+}
+
 </style>
 </head>
 <body>
