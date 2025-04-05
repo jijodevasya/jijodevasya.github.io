@@ -97,5 +97,15 @@
       <img src="phone-icon.png" alt="Phone Icon"> Contact
     </a>
   </div>
+  <script>
+    // Function to handle page transition
+    function pageTransition(event, pageUrl) {
+      event.preventDefault(); // Prevent the default click action
+      document.body.style.opacity = '0'; // Fade out the page
+      setTimeout(function() {
+        window.location.href = pageUrl; // Redirect to the new page after fade-out
+      }, 500); // The time for the fade-out effect (0.5s)
+    }
+  </script>
 </body>
 </html>
