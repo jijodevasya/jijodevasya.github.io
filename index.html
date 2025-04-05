@@ -7,53 +7,39 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f0f2f5;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      padding: 20px;
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .title {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      font-size: 24px;
-      font-weight: bold;
-      color: #333;
-      margin-right: 20px;
-    }
-
-    .nav-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .nav-buttons a {
-      padding: 10px 20px;
-      border: 2px solid #007bff;
-      color: #007bff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+      background-color: #f4f4f4;
       text-align: center;
     }
 
-    .nav-buttons a:hover {
-      background-color: #007bff;
-      color: white;
+    .title {
+      margin-top: 40px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
     }
 
-    .main {
+    .container {
       display: flex;
-      align-items: center;
       justify-content: center;
-      height: 80vh;
+      align-items: center;
+      margin-top: 50px;
+      gap: 40px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: 2px solid #007bff;
+      background-color: white;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #007bff;
+      color: white;
     }
 
     .profile {
@@ -65,35 +51,30 @@
     .profile-img {
       width: 200px;
       height: 200px;
-      background-color: #ddd;
       object-fit: cover;
+      background-color: #ccc;
       margin-bottom: 10px;
     }
 
-    .name-vertical {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      font-weight: bold;
+    .name {
       font-size: 18px;
-      color: #333;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <div class="title">Discover My Professional Journey</div>
-    <div class="nav-buttons">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-    </div>
-  </div>
+  <div class="title">Discover My Professional Journey</div>
 
-  <div class="main">
+  <div class="container">
+    <a href="#projects" class="btn">Projects</a>
+
     <div class="profile">
       <img src="profile.jpg" alt="Jijo Devasya" class="profile-img">
-      <div class="name-vertical">Jijo Devasya</div>
+      <div class="name">Jijo Devasya</div>
     </div>
+
+    <a href="#about" class="btn">About</a>
   </div>
 
 </body>
