@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome - Jijo Devasya</title>
+  <title>Jijo Devasya | Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,6 +14,18 @@
       font-size: 3em;
       color: #333;
     }
+    h2 {
+      font-size: 2em;
+      color: #333;
+    }
+    .profile-img {
+  display: inline-block;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
 .links-container {
   display: flex;
   justify-content: space-between; /* Distribute links to the sides */
@@ -24,27 +36,48 @@
 .link-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #007bff;
+  background-color: #284C64;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-size: 1.2em;
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
 }
 
 .link-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px);
+  background-color: #353535;
+  transform: translateY(-12px);
 }
+    .btn-alt {
+  padding: 10px 20px;
+  background-color: #447D72;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btn-alt:hover {
+  background-color: #353535;
+}
+
   </style>
 </head>
 <body>
 
-  <h1>Welcome to My Portfolio</h1>
-
+  <h1>Discover my Professional Journey</h1>
+  <img src="profile.jpg" alt="Jijo Devasya" class="profile-img">
+  <h2>Jijo Devasya</h2>
   <a href="about.html" class="link-button">About Me</a>
-  <a href="projects.html" class="link-button">Projects</a>
+  <a href="education.html" class="link-button">Education</a>
+  <a href="skills.html" class="link-button">Skills</a>
+  <a href="licences.html" class="link-button">Licences</a>
+  <a href="certifications.html" class="link-button">Certifications</a>
+  <a href="#skills" class="btn-alt">Contact</a>
 
 </body>
 </html>
