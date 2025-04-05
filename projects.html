@@ -16,21 +16,37 @@
       color: #333;
     }
 
-    ul {
-      padding-left: 20px;
+    .project-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      margin-right: auto;
+      margin-left: auto;
     }
 
-    li {
-      margin-bottom: 15px;
+    .project-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
 
-    strong {
+    .project-card h3 {
       color: #007bff;
+      font-size: 1.5em;
+      margin-top: 15px;
+    }
+
+    .project-card p {
+      color: #333;
+      line-height: 1.6;
+      margin: 10px 0;
     }
 
     a {
-      display: inline-block;
-      margin-top: 30px;
       text-decoration: none;
       color: #007bff;
       font-weight: bold;
@@ -39,17 +55,41 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
   <h1>Projects</h1>
-  <ul>
-    <li><strong>Bushing Test Rig:</strong> Designed and built a rig to analyze vibration and noise damping in vehicle components.</li>
-    <li><strong>Drill Jig & Milling Fixture:</strong> Created precise tooling for manufacturing and reduced manual error in component positioning.</li>
-  </ul>
 
-  <a href="index.html">← Back to Home</a>
+  <div class="project-card">
+    <img src="bushing_test_rig.jpg" alt="Bushing Test Rig">
+    <h3>Bushing Test Rig</h3>
+    <p>This project involved the design and construction of a test rig used to analyze the vibration and noise damping of bushings used in automotive applications. I used SolidWorks for the design and simulation.</p>
+    <p>Technologies: SolidWorks, Vibration Analysis, Automotive Design</p>
+    <a href="https://github.com/yourusername/bushing-test-rig" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="project-card">
+    <img src="drill_jig_milling_fixture.jpg" alt="Drill Jig & Milling Fixture">
+    <h3>Drill Jig & Milling Fixture</h3>
+    <p>This project focused on the design of a drill jig and milling fixture to enhance precision and reduce errors in manufacturing processes. The project was done using AutoCAD for the technical drawings and SolidWorks for 3D modeling.</p>
+    <p>Technologies: AutoCAD, SolidWorks, Manufacturing Design</p>
+    <a href="https://github.com/yourusername/drill-jig" target="_blank">View on GitHub</a>
+  </div>
+
+  <a href="index.html" class="back-link">← Back to Home</a>
 
 </body>
 </html>
