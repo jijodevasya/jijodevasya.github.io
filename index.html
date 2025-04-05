@@ -26,6 +26,30 @@
     }
     .link-button:hover {
       background-color: #676AE3;
+      .links-container {
+  display: flex;
+  justify-content: space-between; /* Distribute links to the sides */
+  width: 50%; /* Adjust the width of the container for a neat look */
+  margin: 20px auto; /* Center the container */
+}
+
+.link-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
     }
   </style>
 </head>
