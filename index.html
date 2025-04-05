@@ -2,62 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jijo Devasya</title>
+  <title>Jijo Devasya | Portfolio</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .title {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-right: 20px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-buttons a {
+      padding: 10px 20px;
+      border: 2px solid #007bff;
+      color: #007bff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
       text-align: center;
-      margin-top: 100px;
-      background-color: #f5f5f5;
     }
-    h1 {
-      font-size: 3em;
-      color: #333;
+
+    .nav-buttons a:hover {
+      background-color: #007bff;
+      color: white;
     }
-    h2 {
-      font-size: 2em;
-      color: #333;
+
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
     }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .profile-img {
-  display: inline-block;
-  margin: 20px auto;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
+      width: 200px;
+      height: 200px;
+      background-color: #ddd;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
 
-.links-container {
-  display: flex;
-  justify-content: space-between; /* Distribute links to the sides */
-  width: 50%; /* Adjust the width of the container for a neat look */
-  margin: 20px auto; /* Center the container */
-}
-
-.link-button {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.2em;
-  text-align: center;
-  transition: 0.3s ease;
-}
-
-.link-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px);
-}
+    .name-vertical {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Discover My Professional Journey</h1>
-  <img src="profile.jpg" alt="Jijo Devasya" class="profile-img"> 
-  <h2>Jijo Devasya</h2>
-  <a href="about.html" class="link-button">About Me</a>
-  <a href="projects.html" class="link-button">Projects</a>
+  <div class="header">
+    <div class="title">Discover My Professional Journey</div>
+    <div class="nav-buttons">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="profile">
+      <img src="profile.jpg" alt="Jijo Devasya" class="profile-img">
+      <div class="name-vertical">Jijo Devasya</div>
+    </div>
+  </div>
 
 </body>
 </html>
