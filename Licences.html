@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Licenses & Certifications | Jijo Devasya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(120deg, #A56F3B, #D0A899);
+      color: #333;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #000000;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #000000;
+    }
+
+    .license-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    .license-item {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .license-item:hover {
+      background-color: #e0e0e0;
+    }
+
+    .license-item h3 {
+      color: #284C64;
+      font-size: 1.6em;
+    }
+
+    .license-item p {
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #284C64;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      margin-top: 30px;
+      transition: 0.4s ease;
+    }
+
+    .home-button:hover {
+      background-color: #353535;
+      transform: translateY(-12px);
+    }
+
+    .contact-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      background-color: #284C64;
+      padding: 10px 20px;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease;
+    }
+
+    .contact-container:hover {
+      transform: translateY(-12px);
+    }
+
+    .contact-container a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Licenses & Certifications</h1>
+  <h2>Jijo Devasya</h2>
+
+  <!-- List of licenses -->
+  <ul class="license-list">
+    <li class="license-item">
+      <h3>Class G Driver's License</h3>
+      <p><strong>Issued by:</strong> Ontario Ministry of Transportation</p>
+      <p><strong>Date of Issue:</strong> June 2019</p>
+      <p><strong>License Number:</strong> [XXX1234567]</p>
+      <p><strong>Expiration Date:</strong> June 2025</p>
+    </li>
+    <li class="license-item">
+      <h3>Transport Driving License (India)</h3>
+      <p><strong>Issued by:</strong> Regional Transport Office (RTO)</p>
+      <p><strong>Date of Issue:</strong> March 2015</p>
+      <p><strong>License Number:</strong> [RTO123456]</p>
+    </li>
+    <li class="license-item">
+      <h3>Advanced Diploma in Mechanical Engineering Technology Design</h3>
+      <p><strong>Issued by:</strong> Centennial College, Ontario</p>
+      <p><strong>Date of Issue:</strong> April 2024</p>
+    </li>
+  </ul>
+
+  <!-- Home Button -->
+  <a href="https://www.yourwebsite.com" class="home-button" target="_blank">Go to Home</a>
+
+  <!-- Contact Button -->
+  <div class="contact-container">
+    <a href="contact.html">
+      <img src="phone-icon.png" alt="Phone Icon"> Contact
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Jijo Devasya. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Function to handle page transition
+    function pageTransition(event, pageUrl) {
+      event.preventDefault(); // Prevent the default click action (immediate page load)
+      document.body.style.opacity = '0'; // Fade out the page
+      setTimeout(function() {
+        window.location.href = pageUrl; // Redirect to the new page after fade-out
+      }, 500); // 1-second fade-out duration
+    }
+  </script>
+
+</body>
+</html>
