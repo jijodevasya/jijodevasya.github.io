@@ -51,7 +51,36 @@
   background-color: #353535;
   transform: translateY(-12px);
 }
+.contact-container {
+      position: fixed; /* Keep it in place even while scrolling */
+      bottom: 20px; /* Distance from the bottom */
+      left: 20px; /* Distance from the left */
+      display: flex;
+      align-items: center; /* Align the icon and text horizontally */
+      background-color: #284C64; /* Background color */
+      padding: 10px 20px;
+      border-radius: 25px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
 
+    .contact-container a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .contact-container a:hover {
+      color: #D0A899; /* Hover effect */
+    }
+
+    .contact-container img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px; /* Space between icon and text */
+    }
 </style>
 </head>
 <body>
@@ -67,5 +96,10 @@
   <a href="certifications.html" class="link-button">Certifications</a>
   <a href="contact.html" class="link-button">Contact</a>
 
+  <div class="contact-container">
+    <a href="tel:+1234567890">
+      <img src="phone-icon.png" alt="Phone Icon"> Contact
+    </a>
+  </div>
 </body>
 </html>
