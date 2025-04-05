@@ -85,27 +85,29 @@
   <img src="profile.jpg" alt="Jijo Devasya" class="profile-img">
   <h1>Discover my Professional Journey</h1>
   <h2>Jijo Devasya</h2>
-  <a href="about.html" class="link-button">About Me</a>
-  <a href="education.html" class="link-button">Education</a>
-  <a href="skills.html" class="link-button">Skills</a>
-  <a href="projects.html" class="link-button">Projects</a>
-  <a href="licences.html" class="link-button">Licences</a>
-  <a href="certifications.html" class="link-button">Certifications</a>
-  
+  <a href="about.html" class="link-button" onclick="pageTransition(event, 'about.html')">About Me</a>
+  <a href="education.html" class="link-button" onclick="pageTransition(event, 'education.html')">Education</a>
+  <a href="skills.html" class="link-button" onclick="pageTransition(event, 'skills.html')">Skills</a>
+  <a href="projects.html" class="link-button" onclick="pageTransition(event, 'projects.html')">Projects</a>
+  <a href="licences.html" class="link-button" onclick="pageTransition(event, 'licences.html')">Licences</a>
+  <a href="certifications.html" class="link-button" onclick="pageTransition(event, 'certifications.html')">Certifications</a>
+
   <div class="contact-container">
     <a href="contact.html">
       <img src="phone-icon.png" alt="Phone Icon"> Contact
     </a>
   </div>
+
   <script>
     // Function to handle page transition
     function pageTransition(event, pageUrl) {
-      event.preventDefault(); // Prevent the default click action
+      event.preventDefault(); // Prevent the default click action (immediate page load)
       document.body.style.opacity = '0'; // Fade out the page
       setTimeout(function() {
         window.location.href = pageUrl; // Redirect to the new page after fade-out
-      }, 1000); // The time for the fade-out effect (0.5s)
+      }, 1000); // 1-second fade-out duration
     }
   </script>
+
 </body>
 </html>
