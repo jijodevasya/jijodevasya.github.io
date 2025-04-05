@@ -12,15 +12,22 @@
       height: 100vh; /* Ensure body takes the full height of the viewport */
       background: linear-gradient(120deg, #A56F3B, #D0A899);
       color: #333;
-          }
+    }
+
     h1 {
       font-size: 3em;
       color: #000000;
+      animation: fadeInFromLeft 1.5s forwards;
+      animation-delay: 0.5s;
     }
+
     h2 {
       font-size: 2em;
       color: #000000;
+      animation: fadeInFromLeft 1.5s forwards;
+      animation-delay: 1s;
     }
+
     @keyframes fadeInFromLeft {
       0% {
         transform: translateX(-30px); /* Start from the left */
@@ -31,68 +38,73 @@
         opacity: 1; /* Fully visible */
       }
     }
+
     .profile-img {
-  display: inline-block;
-  margin: 20px auto;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 20%;
-}
-.links-container {
-  display: flex;
-  justify-content: space-between; /* Distribute links to the sides */
-  width: 50%; /* Adjust the width of the container for a neat look */
-  margin: 20px auto; /* Center the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-.link-button {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #284C64;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.2em;
-  text-align: center;
-  transition: 0.4s ease;
-}
+      display: inline-block;
+      margin: 20px auto;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 20%;
+    }
 
-.link-button:hover {
-  background-color: #353535;
-  transform: translateY(-12px);
-}
-.contact-container {
-  position: fixed; /* Keep it in place even while scrolling */
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right */
-  display: flex;
-  align-items: center; /* Align the icon and text horizontally */
-  background-color: #284C64; /* Background color */
-  padding: 10px 20px;
-  border-radius: 25px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.4s ease; /* Smooth transition for hovering */
-}
+    .links-container {
+      display: flex;
+      justify-content: space-between; /* Distribute links to the sides */
+      width: 50%; /* Adjust the width of the container for a neat look */
+      margin: 20px auto; /* Center the container */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
 
-.contact-container:hover {
-  transform: translateY(-12px); /* Move the container up when hovered */
-}
+    .link-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #284C64;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      text-align: center;
+      transition: 0.4s ease;
+    }
 
-.contact-container a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-}
+    .link-button:hover {
+      background-color: #353535;
+      transform: translateY(-12px);
+    }
 
-.contact-container a:hover {
-  color: #D0A899; /* Hover effect on the text */
-}
+    /* Contact container styling */
+    .contact-container {
+      position: fixed; /* Keep it in place even while scrolling */
+      bottom: 20px; /* Distance from the bottom */
+      right: 20px; /* Distance from the right */
+      display: flex;
+      align-items: center; /* Align the icon and text horizontally */
+      background-color: #284C64; /* Background color */
+      padding: 15px 30px; /* Adjust padding for a larger container */
+      border-radius: 25px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover effects */
+    }
 
-</style>
+    .contact-container:hover {
+      transform: translateY(-12px); /* Move the container up when hovered */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Increase shadow on hover for a more prominent effect */
+    }
+
+    .contact-container a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .contact-container a:hover {
+      color: #D0A899; /* Hover effect on the text */
+    }
+  </style>
 </head>
 <body>
 
