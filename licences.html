@@ -61,22 +61,32 @@
       margin: 5px 0;
     }
 
-    .home-button {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #284C64;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 1.2em;
-      margin-top: 30px;
-      transition: 0.4s ease;
-    }
+    .home-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #284C64;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+  z-index: 1000;
+}
 
-    .home-button:hover {
-      background-color: #353535;
-      transform: translateY(-12px);
-    }
+.home-container:hover {
+  transform: translateY(-12px);
+}
+
+.home-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
     .contact-container {
       position: fixed;
@@ -114,7 +124,7 @@
   <ul class="license-list">
     <li class="license-item">
       <h3>Class G Driver's License</h3>
-      <<p><span class="label">Issued by:</span> Ontario Ministry of Transportation</p>
+      <p><span class="label">Issued by:</span> Ontario Ministry of Transportation</p>
       <p><span class="label">Date of Issue:</span> June 2019</p>
       <p><span class="label">License Number:</span> Available upon request</p>
       <p><span class="label">Expiration Date:</span> June 2025</p>
@@ -131,7 +141,11 @@
       </ul>
 
   <!-- Home Button -->
-  <a href="https://jijodevasya.github.io" class="home-button" target="_blank">Go to Home</a>
+<div class="home-container">
+  <a href="https://jijodevasya.github.io" target="_blank">
+    <img src="home-icon.png" alt="Home Icon" width="24" height="24" style="margin-right: 10px;"> Home
+  </a>
+</div>
 
   <!-- Contact Button -->
   <div class="contact-container">
