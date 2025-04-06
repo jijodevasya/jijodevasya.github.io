@@ -7,84 +7,93 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin: 0; /* Remove default body margin */
-      padding: 0; /* Remove default body padding */
-      height: 100vh; /* Ensure body takes the full height of the viewport */
+      margin: 0;
+      padding: 0;
+      height: 100vh;
       background: linear-gradient(120deg, #A56F3B, #D0A899);
       color: #333;
-          }
+    }
+
     h1 {
       font-size: 3em;
       color: #000000;
     }
+
     h2 {
       font-size: 2em;
       color: #000000;
     }
-            .profile-img {
-  display: inline-block;
-  margin: 20px auto;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 20%;
-}
-.links-container {
-  display: flex;
-  justify-content: space-between; /* Distribute links to the sides */
-  width: 50%; /* Adjust the width of the container for a neat look */
-  margin: 20px auto; /* Center the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-.link-button {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #284C64;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.2em;
-  text-align: center;
-  transition: 0.4s ease;
-}
 
-.link-button:hover {
-  background-color: #353535;
-  transform: translateY(-12px);
-}
-.contact-container {
-  position: fixed; /* Keep it in place even while scrolling */
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right */
-  display: flex;
-  align-items: center; /* Align the icon and text horizontally */
-  background-color: #284C64; /* Background color */
-  padding: 10px 20px;
-  border-radius: 25px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.4s ease; /* Smooth transition for hovering */
-}
+    .profile-img {
+      display: inline-block;
+      margin: 20px auto;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 20%;
+    }
 
-.contact-container:hover {
-  transform: translateY(-12px); /* Move the container up when hovered */
-}
+    .links-container {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
 
-.contact-container a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-}
+    .link-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #284C64;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      text-align: center;
+      margin-right: 20px; /* Initial space between links */
+      transition: margin-right 2s ease; /* Transition for margin-right */
+    }
 
-</style>
+    .link-button:hover {
+      background-color: #353535;
+      transform: translateY(-12px);
+      margin-right: 50px; /* Increase the margin when hovering */
+    }
+
+    .contact-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      background-color: #284C64;
+      padding: 10px 20px;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease;
+    }
+
+    .contact-container:hover {
+      transform: translateY(-12px);
+    }
+
+    .contact-container a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+  </style>
 </head>
 <body>
 
   <img src="profile.jpg" alt="Jijo Devasya" class="profile-img">
   <h1>Discover my Professional Journey</h1>
   <h2>Jijo Devasya</h2>
+
   <a href="about.html" class="link-button" onclick="pageTransition(event, 'about.html')">About Me</a>
   <a href="education.html" class="link-button" onclick="pageTransition(event, 'education.html')">Education</a>
   <a href="skills.html" class="link-button" onclick="pageTransition(event, 'skills.html')">Skills</a>
@@ -108,5 +117,6 @@
       }, 500); // 1-second fade-out duration
     }
   </script>
+
 </body>
 </html>
